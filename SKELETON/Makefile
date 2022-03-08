@@ -59,7 +59,7 @@ clean:
 #---- behavioral verilog simulation ----#
 pre_sim: init
 	@cd $(PRE_SIM_PATH) &&\
-	$(XRUN) tb_$(TOP_MODULE).sv 
+	$(XRUN) tb_$(TOP_MODULE).v 
 
 #---- behavioral simulation after synthesis ----#
 syn_sim: init
