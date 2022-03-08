@@ -1,3 +1,5 @@
+# Fork for different tools
+
 # Standard Digital Design Flow
 This is a complete tutorial for you to get familiar with the standard digital design flow.
 It contains a complete skeleton (the `SKELETON` directory, using umc065 process as an example) for
@@ -11,12 +13,12 @@ digital layout with specified ports to be integrated with other analog layout.
 
 ## Standard Digital Design Flow
 A standard digital design flow consists of
-1. RTL HDL Design (in verilog HDL language)
-2. Behavior Simulation (platform: Synopsys&reg; VCS)
-3. Logic Synthesis (platform: Synopsys&reg; Design Compiler)
-4. Post-Synthesis Simulation (platform: Synopsys&reg; VCS)
-5. Automatic Place & Route (platform: Cadence&reg; Encounter Digital Implementation)
-6. Post-Layout Simulation (platform: Synopsys&reg; VCS)
+1. RTL HDL Design (in systemverilog HDL language)
+2. Behavior Simulation (platform: Cadence&reg; Xcelium)
+3. Logic Synthesis (platform: Cadence&reg; Genus )
+4. Post-Synthesis Simulation (platform: Cadence&reg; Xcelium)
+5. Automatic Place & Route (platform: Cadence&reg; Innovus)
+6. Post-Layout Simulation (platform: Cadence&reg; Xcelium)
 7. Integration with Analog Part (platform: Cadence&reg; Virtuoso)
 
 Note that the above steps are iterative. For example, after logic synthesis, it is possible
