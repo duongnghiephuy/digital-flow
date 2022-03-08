@@ -137,6 +137,8 @@ be synthesized once and not touched again
 The working directory is the same directory as `Makefile`.
 
 Example command to run Xcelium without makefile by including all design files:
+
+
 % xrun -ieee1364 -v93 -access +r -gui verify.e top.v middle.vhd sub.v
 
 ### Execution
