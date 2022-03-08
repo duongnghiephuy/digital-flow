@@ -35,8 +35,8 @@ shown below.
 
 Now we can establish the relationships of each directory to each step (from step 1 to step 6) in
 the flow above.
-- RTL HDL design, including all testbenches &mdash; `SKELETON/verilog`
-- Behavior simulation &mdash; `SKELETON/pre_sim`
+- RTL HDL design, including all testbenches &mdash; `SKELETON/systemverilog`
+- Behavior simulation &mdash; `SKELETON/pre_sim`  Contains symbolic links to systemverilog files
 - Logic synthesis &mdash; `SKELETON/syn`
 - Post-synthesis simulation &mdash; `SKELETON/syn_sim`
 - Automaric place & route &mdash; `SKELETON/soc`
