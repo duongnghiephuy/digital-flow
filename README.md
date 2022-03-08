@@ -36,7 +36,7 @@ shown below.
 Now we can establish the relationships of each directory to each step (from step 1 to step 6) in
 the flow above.
 - RTL HDL design, including all testbenches &mdash; `SKELETON/verilog`
-- Behavior simulation &mdash; `SKELETON/pre_sim`  Make sure to create symbolic links to systemverilog files
+- Behavior simulation &mdash; `SKELETON/pre_sim`  Make sure to create symbolic links to verilog/systemverilog files
 - Logic synthesis &mdash; `SKELETON/syn`
 - Post-synthesis simulation &mdash; `SKELETON/syn_sim`
 - Automaric place & route &mdash; `SKELETON/soc`
@@ -135,6 +135,9 @@ be synthesized once and not touched again
 - Input: Verilog HDL design and the corresponding testbench
 
 The working directory is the same directory as `Makefile`.
+
+Example command to run Xcelium without makefile by including all design files:
+% xrun -ieee1364 -v93 -access +r -gui verify.e top.v middle.vhd sub.v
 
 ### Execution
 When you have prepared your verilog HDL design and the corresponding testbench files (for behavior
