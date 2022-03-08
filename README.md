@@ -13,7 +13,7 @@ digital layout with specified ports to be integrated with other analog layout.
 
 ## Standard Digital Design Flow
 A standard digital design flow consists of
-1. RTL HDL Design (in systemverilog HDL language)
+1. RTL HDL Design (in verilog/systemverilog HDL language)
 2. Behavior Simulation (platform: Cadence&reg; Xcelium)
 3. Logic Synthesis (platform: Cadence&reg; Genus )
 4. Post-Synthesis Simulation (platform: Cadence&reg; Xcelium)
@@ -35,7 +35,7 @@ shown below.
 
 Now we can establish the relationships of each directory to each step (from step 1 to step 6) in
 the flow above.
-- RTL HDL design, including all testbenches &mdash; `SKELETON/systemverilog`
+- RTL HDL design, including all testbenches &mdash; `SKELETON/verilog`
 - Behavior simulation &mdash; `SKELETON/pre_sim`  Make sure to create symbolic links to systemverilog files
 - Logic synthesis &mdash; `SKELETON/syn`
 - Post-synthesis simulation &mdash; `SKELETON/syn_sim`
