@@ -1,4 +1,4 @@
-# Fork for different tools (In progress)
+# Fork for different tools (In progress. Currently at Step 3)
 
 # Standard Digital Design Flow
 This is a complete tutorial for you to get familiar with the standard digital design flow.
