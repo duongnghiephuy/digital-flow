@@ -55,12 +55,6 @@ terminal to check the environment configurations.
 [SKELETON]$ make init
 ```
 
-## Prerequisite
-In order to ensure that this tutorial works the best for you, a few prerequisites must be met.
-If you are not [IPEL](https://ipel.home.ece.ust.hk) members or are not using the same process
-as in this tutorial, it should still be adequate enough for you to establish everything
-accordingly.
-
 ### Linux Command Line Environment
 First of all, it is very important for users to get used to the Linux development
 environment, especially the Linux command line. A lot of the operations in the design flow
@@ -68,30 +62,18 @@ are done with Linux command line and sometimes only possible to be done with com
 Thus, you must get familiar with the command line working environment.
 
 Another prerequisite would be that you have all your tool chains properly set up and necessary
-resources regarding digital design provided by the foundry. For example, this tutorial is for
-[IPEL](https://ipel.home.ece.ust.hk) members, and the tool chains are specified according to
-IPEL Linux servers. Furthermore, umc065 process is used as example, so if you are using
+resources regarding digital design provided by the foundry.Furthermore, umc065 process is used as example, so if you are using
 other process, you are on your own to find out all the corresponding resources vital for
 digital design flow.
 
 ### Tool Chain Setup
-As mentioned above, we have to use different sets of tool chains to complete each step. For
-[IPEL](http://www.ece.ust.hk/~ipel) members, all the required tools are available on the Linux
-server.
-- Synopsys&reg; VCS
-- Synopsys&reg; Design Compiler
-- Cadence&reg; Encounter Digital Implementation
+As mentioned above, we have to use different sets of tool chains to complete each step. 
 
-To setup the tools properly, you should put the following lines to your `~/.cshrc_user` so that
-they could be loaded by default each time you start a terminal.
-```sh
-source /usr/eelocal/synopsys/vcs_mx-vi2014.03-2/.cshrc  # Synopsys VCS
-source /usr/eelocal/synopsys/syn-vi2013.12-sp5-5/.cshrc # Synopsys Design Compiler
-source /usr/eelocal/cadence/edi142/.cshrc               # Cadence EDI
-```
+- Cadence&reg; Xcelium
+- Cadence&reg; Genus
+- Cadence&reg; Innovus
 
-Currently (May 2018) all these tools are up-to-date. Update the tools if newer versions are
-available.
+To setup the tools properly, you should include the install library in .cshrc for each user.
 
 ### Digital Standard Cell Library
 The digital standard cell library should be prepared in advance. A Cadence library containing all
@@ -149,7 +131,7 @@ be synthesized once and not touched again
 
 ## Step 2: Behavior Simulation
 ### Prerequisite
-- Tool: Synopsys&reg; VCS
+- Tool: Cadence&reg; Xcelium
 - Input: Verilog HDL design and the corresponding testbench
 
 The working directory is the same directory as `Makefile`.
