@@ -141,6 +141,9 @@ Example command to run Xcelium without makefile by including all design files:
 
 % xrun -ieee1364 -v93 -access +r -gui verify.e top.v middle.vhd sub.v
 
+ieee1364 and v93 are optional standards to run this verilog and vhd files. 
+It's okay in most cases to run without them.
+
 ### Execution
 When you have prepared your verilog HDL design and the corresponding testbench files (for behavior
 simulation it is `SKELETON/verilog/tb_SKELETON.v`), behavior simulation can be carried out to
