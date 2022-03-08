@@ -9,7 +9,7 @@
 
 #---- global variables ----#
 WORK_PATH    := $(shell pwd)
-TOP_MODULE   := silly
+TOP_MODULE   := $(shell basename `pwd`)
 LIB_PATH      = /home/ipel1/fchenaf/VerilogDesign/umc065_digital
 VLG_PATH      = $(WORK_PATH)/verilog
 PRE_SIM_PATH  = $(WORK_PATH)/pre_sim
