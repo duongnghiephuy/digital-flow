@@ -195,7 +195,8 @@ technology-specific gate-level netlist is derived.
   - `SKELETON.v` is just a symbolic link to `../verilog/SKELETON.v`. This is the RTL HDL design
   to be synthesized.
 
-The working directory is the same directory as `Makefile`.
+Follow steps in this tutorial
+https://github.com/dinokev6/Cadence-Notes/wiki/Genus
 
 ### Design Constraints
 During synthesis, design constraints must be applied to constrain the Design Compiler. There are
